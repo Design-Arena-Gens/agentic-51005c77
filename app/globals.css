@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light dark;
+  line-height: 1.5;
+  font-size: 16px;
+  --bg: #0b1a2a;
+  --surface: rgba(13, 31, 51, 0.8);
+  --surface-strong: rgba(15, 36, 60, 0.95);
+  --surface-light: rgba(255, 255, 255, 0.08);
+  --text-primary: #f5f7fa;
+  --text-muted: rgba(227, 233, 243, 0.72);
+  --accent: #1ea7ff;
+  --accent-strong: #4dd5ff;
+  --shadow-glow: 0 24px 48px rgba(12, 30, 50, 0.45);
+  --shadow-soft: 0 12px 32px rgba(8, 20, 34, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: radial-gradient(circle at top, #12395f, var(--bg));
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(30, 167, 255, 0.9), rgba(77, 213, 255, 0.35));
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(12, 30, 50, 0.7);
+}
